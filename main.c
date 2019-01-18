@@ -1,7 +1,16 @@
 #include <stdio.h>
+struct xuesheng
+{
+    int yuwen;
+    int shuxue;
+    int yingyu;
+    char name[1000];
+};
 
 int main()
 {
+    int index=0;
+    struct xuesheng arr[1000];
 
     printf("进入系统（三科成绩）");
 
@@ -20,6 +29,14 @@ int main()
 
         if (a ==1)
         {
+            printf("请输入姓名：\n");
+            scanf("%s\n",&(arr[index].name));
+            printf("请输入数学：\n");
+            scanf("%s\n",&(arr[index].shuxue));
+            printf("请输入语文：\n");
+            scanf("%s\n",&(arr[index].yuwen));
+            printf("请输入英语：\n");
+            scanf("%s\n",&(arr[index].yingyu));
         }
         if (a ==2)
         {
