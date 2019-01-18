@@ -99,6 +99,25 @@ int main()
         }
         if (a == 6)
         {
+            printf("总分最高的学生为：\n");
+
+            int max = 0;
+            int stuID = 0;
+            
+            for(int i = 0; i < index; i++)
+            {
+                int sum = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
+                if(max < sum){
+                    max  =  sum;
+                    stuID = i;
+                }
+            }
+            printf("总分最高的姓名为%s，语文：%d，数学:%d，英语:%d\n",arr[stuID].name,arr[stuID].yuwen,arr[stuID].shuxue,arr[stuID].yingyu);
+            
+            printf("\n点击回车继续\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x); 
         }
         if (a == 7)
         {
