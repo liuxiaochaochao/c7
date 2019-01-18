@@ -30,16 +30,36 @@ int main()
         if (a ==1)
         {
             printf("请输入姓名：\n");
-            scanf("%s\n",&(arr[index].name));
+            scanf("%s",&(arr[index].name));
             printf("请输入数学：\n");
-            scanf("%s\n",&(arr[index].shuxue));
+            scanf("%d",&(arr[index].shuxue));
             printf("请输入语文：\n");
-            scanf("%s\n",&(arr[index].yuwen));
+            scanf("%d",&(arr[index].yuwen));
             printf("请输入英语：\n");
-            scanf("%s\n",&(arr[index].yingyu));
+            scanf("%d",&(arr[index].yingyu));
+            index++;
+            printf("点击回车继续");
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
         }
         if (a ==2)
         {
+            if (index > 0)
+            {
+                index--;
+                printf("删除完成，点击回车继续\n");
+                char x;
+                scanf("%c", &x);
+                scanf("%c", &x);
+            }
+            else
+            {
+                printf("无该学生信息，删除失败，点击回车继续");
+                char x;
+                scanf("%c", &x);
+                scanf("%c", &x);
+            }            
         }
         if (a ==3)
         {
